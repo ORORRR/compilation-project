@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.femtost.disc.glcomp.m1comp6.interpreters.mjj.InterpreterVisitorTest
+-------------------------------------------------------------------------------
+Tests run: 111, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec

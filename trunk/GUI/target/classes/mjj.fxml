@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<?import org.fxmisc.richtext.CodeArea?>
+<AnchorPane fx:id="mjjPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.femtost.disc.glcomp.m1comp6.gui.MiniJajaController">
+    <VirtualizedScrollPane fx:id="mjjContainer" AnchorPane.bottomAnchor="0.0"
+                           AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+        <content>
+            <CodeArea fx:id="mjjContent"/>
+        </content>
+    </VirtualizedScrollPane>
+</AnchorPane>

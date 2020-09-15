@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mainGUI.MainController">
+    <bottom>
+        <TitledPane animated="false" text="Run" BorderPane.alignment="CENTER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <TextArea fx:id="runnedMiniJaja" editable="false" AnchorPane.bottomAnchor="0.0"
+                                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </bottom>
+    <top>
+        <VBox fx:id="vbox" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="menuItemOpen" mnemonicParsing="false" onAction="#openMiniJajaFile"
+                                          text="Open"/>
+                                <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#saveMinijajaFile"
+                                          text="Save"/>
+                                <MenuItem fx:id="menuItemCompiler" mnemonicParsing="false" onAction="#compileMiniJaja"
+                                          text="Compiler"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ToolBar>
+                    <items>
+                        <Button fx:id="buttonNew" mnemonicParsing="false" onAction="#newMJJFile" text="New"
+                                textAlignment="CENTER"/>
+                        <Button fx:id="buttonOpen" mnemonicParsing="false" onAction="#openMiniJajaFile" text="Open"/>
+                        <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#saveMinijajaFile" text="Save"/>
+                        <Separator orientation="VERTICAL"/>
+                        <Button fx:id="buttonBuild" mnemonicParsing="false" onAction="#compileMiniJaja" text="Build"/>
+                        <Button fx:id="buttonDebug" mnemonicParsing="false" text="Debug"/>
+                        <Button fx:id="buttonRun" mnemonicParsing="false" onAction="#runMiniJaja" text="Run"/>
+                    </items>
+                </ToolBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <TextArea fx:id="miniJajaToCompile" BorderPane.alignment="CENTER"/>
+    </center>
+</BorderPane>

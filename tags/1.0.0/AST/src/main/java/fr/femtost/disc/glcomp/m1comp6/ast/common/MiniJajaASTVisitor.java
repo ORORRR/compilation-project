@@ -1,0 +1,50 @@
+package fr.femtost.disc.glcomp.m1comp6.ast.common;
+
+import fr.femtost.disc.glcomp.m1comp6.ast.mjj.*;
+
+public interface MiniJajaASTVisitor<T, E extends Throwable> extends Visitor {
+    T visit(NodeAdd node, Object... args) throws E;
+    T visit(NodeAnd node, Object... args) throws E;
+    T visit(NodeArray node, Object... args) throws E;
+    T visit(NodeArrayGet node, Object... args) throws E;
+    T visit(NodeAssignment node, Object... args) throws E;
+    T visit(NodeBoolean node, Object... args) throws E;
+    T visit(NodeCallE node, Object... args) throws E;
+    T visit(NodeCallI node, Object... args) throws E;
+    T visit(NodeClass node, Object... args) throws E;
+    T visit(NodeCmp node, Object... args) throws E;
+    T visit(NodeCst node, Object... args) throws E;
+    T visit(NodeDecls node, Object... args) throws E;
+    T visit(NodeDiv node, Object... args) throws E;
+    T visit(NodeEnil node, Object... args) throws E;
+    T visit(NodeExnil node, Object... args) throws E;
+    T visit(NodeExpList node, Object... args) throws E;
+    T visit(NodeFalse node, Object... args) throws E;
+    T visit(NodeHeader node, Object... args) throws E;
+    T visit(NodeHeaders node, Object... args) throws E;
+    T visit(NodeIdent node, Object... args) throws E;
+    T visit(NodeIf node, Object... args) throws E;
+    T visit(NodeIncrement node, Object... args) throws E;
+    T visit(NodeInil node, Object... args) throws E;
+    T visit(NodeInstrs node, Object... args) throws E;
+    T visit(NodeInteger node, Object... args) throws E;
+    T visit(NodeMain node, Object... args) throws E;
+    T visit(NodeMethod node, Object... args) throws E;
+    T visit(NodeMiniJaja node, Object... args) throws E;
+    T visit(NodeMinus node, Object... args) throws E;
+    T visit(NodeMul node, Object... args) throws E;
+    T visit(NodeNot node, Object... args) throws E;
+    T visit(NodeNumber node, Object... args) throws E;
+    T visit(NodeOmega node, Object... args) throws E;
+    T visit(NodeOr node, Object... args) throws E;
+    T visit(NodeReturn node, Object... args) throws E;
+    T visit(NodeSub node, Object... args) throws E;
+    T visit(NodeSum node, Object... args) throws E;
+    T visit(NodeSup node, Object... args) throws E;
+    T visit(NodeTrue node, Object... args) throws E;
+    T visit(NodeVar node, Object... args) throws E;
+    T visit(NodeVars node, Object... args) throws E;
+    T visit(NodeVnil node, Object... args) throws E;
+    T visit(NodeVoid node, Object... args) throws E;
+    T visit(NodeWhile node, Object... args) throws E;
+}

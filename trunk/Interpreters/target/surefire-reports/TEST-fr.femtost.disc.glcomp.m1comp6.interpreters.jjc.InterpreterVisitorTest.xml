@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="87" failures="0" name="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" time="0.029" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/aurore/develop/m1comp6/trunk"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/aurore/develop/m1comp6/trunk"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/snap/intellij-idea-community/110/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-42-generic"/>
+    <property name="user.home" value="/home/aurore"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="aurore"/>
+    <property name="java.class.path" value="/snap/intellij-idea-community/110/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/snap/intellij-idea-community/110/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.3.3 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/snap/intellij-idea-community/110/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeMulTest" time="0.012"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSwapTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSwapTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeInvokeExceptionTest" time="0.002"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeAstoreTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeJcstopTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAndTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAndTest2" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSupExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNumberTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNotExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAincTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNegExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeAloadTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeTypeTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeOrExceptionTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeKindTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeCmpExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAndExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIfTestTrue" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIfTestFalse" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeMulExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIncTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIncTest2" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeInstrTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeJcnilTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIdentTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeInitTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodePushFalseTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeDivTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeDivTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeDivTest3" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeStoreTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeStoreTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeStoreTest3" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeStoreTest4" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeStoreTest5" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeOrTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeOrTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeReturnExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodePushNumberTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAddTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAincExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodePopTest2" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodePopTest3" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIfExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewArrayTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeReturnTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNegTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNegTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeLoadExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeNopTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodePushTrueTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewMTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeInvokeTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeLoadTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeLoadTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestCst1" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestCst2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestCst3" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestCst4" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestCst5" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestVar1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestVar2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestVar3" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestVar4" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewTestVar5" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNotTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNotTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeAddExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeIncExceptioncTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSubExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeTrueTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewMExceptionTest" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeNewArrayExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSubTest1" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSubTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeGotoTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeAloadExceptionTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeCmpTestBoolean" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeCmpTestNumber" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeFalseTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeAstoreTest" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSupTest1" time="0.001"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSupTest2" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="nodeSupTest3" time="0"/>
+  <testcase classname="fr.femtost.disc.glcomp.m1comp6.interpreters.jjc.InterpreterVisitorTest" name="NodeAstoreExceptionTest" time="0"/>
+</testsuite>

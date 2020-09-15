@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<?import org.fxmisc.richtext.CodeArea?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.femtost.disc.glcomp.m1comp6.gui.JajaCodeController">
+    <BorderPane fx:id="jjcPane" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+            <VBox>
+                <ToolBar fx:id="toolBar">
+                    <Button fx:id="btnRun" onAction="#onRunJJCClick" text="Run">
+                        <graphic>
+                            <ImageView fitHeight="20.0" fitWidth="20.0"
+                                       pickOnBounds="true" preserveRatio="true">
+                                <Image url="run.png"/>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Run JajaCode"/>
+                        </tooltip>
+                    </Button>
+
+                    <ChoiceBox fx:id="choiceDebug" value="Continue mode"
+                               prefWidth="150.0" onAction="#onDebugChoice">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Continue mode"/>
+                                <String fx:value="Step by step mode"/>
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+
+                    <Button fx:id="btnDebug" onAction="#onDebugClick"
+                            text="Debug">
+                        <graphic>
+                            <ImageView fitHeight="20.0" fitWidth="20.0"
+                                       pickOnBounds="true" preserveRatio="true">
+                                <Image url="debug.png"/>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Debug JajaCode"/>
+                        </tooltip>
+                    </Button>
+
+                    <HBox fx:id="debugActions"/>
+
+                    <Button onAction="#onCloseClick" text="Close">
+                        <tooltip>
+                            <Tooltip text="Hide JajaCode"/>
+                        </tooltip>
+                    </Button>
+                </ToolBar>
+            </VBox>
+        </top>
+        <center>
+            <VirtualizedScrollPane fx:id="jjcContainer">
+                <content>
+                    <CodeArea fx:id="jjcContent" editable="false"/>
+                </content>
+            </VirtualizedScrollPane>
+        </center>
+    </BorderPane>
+</AnchorPane>

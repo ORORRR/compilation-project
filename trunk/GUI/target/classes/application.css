@@ -1,0 +1,311 @@
+@font-face {
+    src: url("Roboto_Mono/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+    src: url("Roboto_Mono/RobotoMono-Bold.ttf");
+}
+
+@font-face {
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+
+.menu-bar{
+    -fx-background-color: #444;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-insets: 0 0 3 0;
+}
+
+.menu-bar .label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.menu {
+    -fx-background-color: #444;
+}
+
+.menu:hover{
+    -fx-background-color: rgb(86, 86, 86);
+}
+
+.menu-bar .context-menu {
+    -fx-background-color: #444;
+}
+
+.menu .context-menu {
+    -fx-background-color: #444;
+}
+
+.menu-bar .menu .menu-item:hover {
+    -fx-background-color: rgb(86, 86, 86);
+}
+
+.button {
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 2;
+    -fx-background-color: #444;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+.button:hover {
+    -fx-background-color: rgb(86, 86, 86);
+}
+
+.choice-box {
+    -fx-background-radius: 2;
+    -fx-background-color: #263238;
+}
+
+.choice-box .label {
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #263238;
+}
+
+.choice-box .menu-item {
+    -fx-padding: 0;
+}
+
+.choice-box .menu-item .left-container {
+    -fx-padding: 5 5 5 15;
+}
+
+.choice-box .menu-item .label {
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: #ffffff;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #2962ff;
+}
+
+.choice-box .menu-item:focused .label {
+    -fx-text-fill: #ffffff;
+}
+
+.tool-bar {
+    -fx-padding: 10 10 10 10;
+    -fx-spacing: 5;
+    -fx-background-color: #444;
+}
+
+.separator:vertical .line {
+    -fx-border-color: transparent transparent transparent #ffffff;
+    -fx-border-width: 1;
+}
+
+.code-area {
+    -fx-background-color: #333;
+}
+
+.code-area .text {
+    -fx-fill: #ffffff;
+    -fx-font-family: "Roboto Mono";
+    -fx-font-size: 13;
+}
+
+.code-area .keyword {
+    -fx-fill: #cb772F;
+}
+
+.code-area .integer {
+    -fx-fill: #6897BB;
+}
+
+
+.code-area .scope {
+    -fx-fill: #BA68C8;
+}
+
+.code-area .parameters {
+    -fx-fill: #BA68C8;
+}
+
+.code-area .paren {
+    -fx-fill: #B0BEC5;
+}
+
+.code-area .brace {
+    -fx-fill: #B0BEC5;
+}
+
+.code-area .bracket {
+    -fx-fill: #B0BEC5;
+    -fx-font-family: "Roboto Mono Bold";
+}
+
+.code-area .semicolon {
+    -fx-fill: #cb772F;
+}
+
+.code-area .comment {
+    -fx-fill: #808080;
+}
+
+.code-area .types {
+    -fx-fill: #BA68C8;
+}
+
+.code-area .boolean {
+    -fx-fill: #9876AA;
+}
+
+.code-area .main {
+    -fx-fill: #ffc66d;
+    -fx-font-family: "Roboto Mono Bold";
+}
+
+.code-area .startstop{
+    -fx-fill: #619647;
+    -fx-font-family: "Roboto Mono Bold";
+}
+
+.code-area .caret {
+    -fx-stroke: #ffffff;
+}
+
+.check-box {
+    -fx-label-padding: 0;
+}
+
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-cursor: CLOSED_HAND;
+}
+
+.check-box:selected .mark {
+    -fx-shape: "M 0 25 a 25 25 0 1 0 50 0 a 25 25 0 1 0 -50 0 z";
+    -fx-background-color: #ff4007;
+}
+
+.lineno {
+    -fx-padding: 0 10 0 0;
+    -fx-background-color: transparent;
+}
+
+.lineno .text {
+    -fx-fill: #554;
+}
+
+.line-controls {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #4f5b62;
+    -fx-border-style: solid;
+}
+
+.debug-line {
+    -fx-background-color: rgba(158, 10, 0, 0.82);
+}
+
+.logs-pane {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.logs-pane .title {
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 0;
+    -fx-background-color: #444;
+}
+
+.logs-pane .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.logs-pane .content {
+    -fx-border-color: transparent;
+}
+
+.logs {
+    -fx-padding: 0;
+}
+
+.logs-text {
+    -fx-background-insets: 0;
+    -fx-font-family: "Roboto Mono";
+    -fx-font-size: 13;
+    -fx-text-fill: #ffffff;
+}
+
+.logs-text .content {
+    -fx-background-radius: 0;
+    -fx-padding: 5 10 5 10;
+    -fx-background-color: #333;
+}
+
+.tooltip{
+    -fx-background-color: #444;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.memory .viewport {
+    -fx-background-color: #333;
+    -fx-font-family: "Roboto";
+}
+
+.memory-stack {
+    -fx-border-color: #555;
+    -fx-border-width: 0 2 0 0;
+    -fx-border-style: solid;
+}
+
+.memory-stack-title,
+.memory-heap-title {
+    -fx-padding: 5 10 5 10;
+    -fx-background-color: #222;
+    -fx-border-color: #555;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}
+.memory-stack-title-txt,
+.memory-heap-title-txt {
+    -fx-fill: #fff;
+}
+
+.memory-stack-element,
+.memory-heap-element {
+    -fx-padding: 5 10 5 10;
+    -fx-border-color: #555;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}
+
+.memory-stack-ident,
+.memory-heap-id {
+    -fx-fill: #A9B7C6;
+}
+
+.memory-stack-value,
+.memory-heap-adr,
+.memory-heap-index {
+    -fx-fill: #6897BB;
+}
+
+.memory-stack-kind,
+.memory-stack-type,
+.memory-heap-size,
+.memory-heap-ref {
+    -fx-fill: #CB772F;
+}

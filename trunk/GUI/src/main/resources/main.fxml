@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.femtost.disc.glcomp.m1comp6.gui.MainController">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem fx:id="menuNew" onAction="#onNewClick" text="New"/>
+                    <MenuItem fx:id="menuOpen" onAction="#onOpenClick" text="Open"/>
+                    <MenuItem fx:id="menuSave" onAction="#onSaveClick" text="Save"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="menuExit" onAction="#onExitClick" text="Exit"/>
+                </Menu>
+                <Menu text="View">
+                    <MenuItem fx:id="menuOpenJJC" onAction="#onOpenJJCClick" text="Show JajaCode"/>
+                    <MenuItem fx:id="menuCloseJJC" onAction="#onCloseJJCClick" text="Hide JajaCode"/>
+                </Menu>
+                <Menu text="Build">
+                    <MenuItem fx:id="menuCompile" onAction="#onCompileClick" text="Build"/>
+                </Menu>
+                <Menu text="Run">
+                    <MenuItem fx:id="menuRunMJJ" onAction="#onRunMJJClick" text="Run MiniJaja"/>
+                    <MenuItem fx:id="menuDebugContinueMJJ" onAction="#onDebugContinueMJJClick" text="Debug MiniJaja (continue mode)"/>
+                    <MenuItem fx:id="menuDebugStepIntoMJJ" onAction="#onDebugStepIntoMJJClick" text="Debug MiniJaja (step by step mode)"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="menuRunJJC" onAction="#onRunJJCClick" text="Run JajaCode"/>
+                    <MenuItem fx:id="menuDebugContinueJJC" onAction="#onDebugContinueJJCClick" text="Debug JajaCode (continue mode)"/>
+                    <MenuItem fx:id="menuDebugStepIntoJJC" onAction="#onDebugStepIntoJJCClick" text="Debug JajaCode (step by step mode)"/>
+                </Menu>
+                <Menu text="Help">
+                    <MenuItem onAction="#onUserGuideClick" text="User Guide"/>
+                    <MenuItem onAction="#onShortcutsClick" text="Shortcuts"/>
+                    <MenuItem onAction="#onAboutClick" text="About"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar fx:id="toolBar">
+                <Button fx:id="btnNew" onAction="#onNewClick" text="New">
+                    <tooltip>
+                        <Tooltip text="Create a new MiniJaja file"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="btnOpen" onAction="#onOpenClick" text="Open">
+                    <tooltip>
+                        <Tooltip text="Open an existing MiniJaja file"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="btnSave" onAction="#onSaveClick" text="Save">
+                    <tooltip>
+                        <Tooltip text="Save the MiniJaja file"/>
+                    </tooltip>
+                </Button>
+
+                <Separator orientation="VERTICAL"/>
+
+                <Button fx:id="btnRun" onAction="#onRunMJJClick" text="Run">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="run.png"/>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Run MiniJaja"/>
+                    </tooltip>
+                </Button>
+
+                <Button fx:id="btnCompile" onAction="#onCompileClick"
+                        text="Build">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="build.png"/>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Compile MiniJaja to JajaCode"/>
+                    </tooltip>
+                </Button>
+
+                <ChoiceBox fx:id="choiceDebug" onAction="#onDebugChoice"
+                           prefWidth="150.0" value="Continue mode">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Continue mode"/>
+                            <String fx:value="Step by step mode"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+
+                <Button fx:id="btnDebug" onAction="#onDebugClick" text="Debug">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="debug.png"/>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Debug MiniJaja"/>
+                    </tooltip>
+                </Button>
+
+                <HBox fx:id="debugActions"/>
+            </ToolBar>
+        </VBox>
+    </top>
+    <center/>
+    <bottom>
+        <TitledPane animated="false" styleClass="logs-pane" text="Logs">
+            <AnchorPane maxHeight="-Infinity" styleClass="logs">
+                <TextArea fx:id="logs" editable="false" styleClass="logs-text"
+                          AnchorPane.bottomAnchor="0.0"
+                          AnchorPane.leftAnchor="0.0"
+                          AnchorPane.rightAnchor="0.0"
+                          AnchorPane.topAnchor="0.0"/>
+            </AnchorPane>
+        </TitledPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Analyser" />
+        <module name="AST" />
+        <module name="Compiler" />
+        <module name="GUI" />
+        <module name="Interpreters" />
+        <module name="Memory" />
+        <module name="TypeChecker" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Analyser" target="8" />
+      <module name="AST" target="8" />
+      <module name="Compiler" target="8" />
+      <module name="GUI" target="8" />
+      <module name="Interpreters" target="8" />
+      <module name="Memory" target="8" />
+      <module name="parent" target="1.5" />
+      <module name="TypeChecker" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

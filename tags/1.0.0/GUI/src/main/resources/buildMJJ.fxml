@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mainGUI.BuildMJJController">
+    <bottom>
+        <TitledPane animated="false" text="Run" BorderPane.alignment="CENTER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <TextArea fx:id="errors" editable="false" AnchorPane.bottomAnchor="0.0"
+                                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </bottom>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="menuItemOpen" mnemonicParsing="false" onAction="#openMiniJajaFile"
+                                          text="Open"/>
+                                <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#saveMinijajaFile"
+                                          text="Save"/>
+                                <MenuItem fx:id="menuItemCompiler" mnemonicParsing="false" onAction="#compileMiniJaja"
+                                          text="Compiler"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ToolBar>
+                    <items>
+                        <Button fx:id="buttonNew" mnemonicParsing="false" onAction="#newMJJFile" text="New"
+                                textAlignment="CENTER"/>
+                        <Button fx:id="buttonOpen" mnemonicParsing="false" onAction="#openMiniJajaFile" text="Open"/>
+                        <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#saveMinijajaFile" text="Save"/>
+                        <Separator orientation="VERTICAL"/>
+                        <Button fx:id="buttonBuild" mnemonicParsing="false" text="Build" onAction="#compileMiniJaja"/>
+                        <Button fx:id="buttonDebug" mnemonicParsing="false" text="Debug"/>
+                        <Button fx:id="buttonRun" mnemonicParsing="false" text="Run" onAction="#runJJC"/>
+                    </items>
+                </ToolBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.29797979797979796" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane>
+                    <children>
+                        <TextArea fx:id="miniJajaToCompile" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane>
+                    <children>
+                        <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <top>
+                                <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <Label graphicTextGap="6.0" text="JajaCode" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="15.0"/>
+                                            </font>
+                                        </Label>
+                                        <ToolBar prefHeight="40.0" prefWidth="200.0">
+                                            <items>
+                                                <Button fx:id="buttonRunJajaCode" mnemonicParsing="false"
+                                                        prefHeight="25.0" prefWidth="63.0" text="Run"
+                                                        onAction="#runJJC"/>
+                                                <Button fx:id="closeJjc" mnemonicParsing="false" prefHeight="25.0"
+                                                        prefWidth="64.0" text="Close" onAction="#closePanel"/>
+                                            </items>
+                                        </ToolBar>
+                                    </children>
+                                </VBox>
+                            </top>
+                            <center>
+                                <TextArea fx:id="compiledJJC" editable="false" BorderPane.alignment="CENTER"/>
+                            </center>
+                        </BorderPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

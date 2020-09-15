@@ -1,0 +1,12 @@
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/debuggers/Debugger.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/debuggers/DebuggerStepInto.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/mjj/InterpreterMode.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/jjc/InterpreterException.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/mjj/Interpreter.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/jjc/Interpreter.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/mjj/InterpreterException.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/debuggers/DebuggerContinue.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/debuggers/DebuggerHandler.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/jjc/InterpreterVisitor.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/debuggers/DebuggableInterpreter.java
+/home/aurore/develop/m1comp6/trunk/Interpreters/src/main/java/fr/femtost/disc/glcomp/m1comp6/interpreters/mjj/InterpreterVisitor.java
